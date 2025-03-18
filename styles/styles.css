@@ -1,16 +1,26 @@
+:root {
+    --color: darkblue;
+    --bg-color: darkblue;
+    --font-color: white;
+    --g-padding: 10px;
+}
+
+
 nav {
     padding: 10px;
-    background-color: darkblue;
+    background-color: var(--bg-color);
 }
 
 nav a {
-    color: white;
+    
     display: block;
-    padding: 20px;
+    color: var(--font-color);
+    padding: var(--g-padding);
+    
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color);
 }
 
 img {
@@ -22,7 +32,7 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: var(--g-padding);
 }
 
 main {
