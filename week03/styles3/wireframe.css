@@ -1,0 +1,50 @@
+:root {
+    --one-color: rgb(0, 8, 20);
+    --two-color: rgb(0, 29, 61);
+    --three-color: rgb(0, 53, 102);
+    --four-color: rgb(255, 195, 0);
+    --five-color: rgb(255, 214, 10);
+    /* url color palette: https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Permanent Marker", cursive;
+}
+
+p {
+    font-family: "Permanent Marker", cursive;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    height: 120px;
+}
+
+#menu {
+    text-align: center;
+    margin: 10px;
+}
+
+#menu a {
+    color: var(--four-color);
+    background-color: var(--one-color);
+    padding: 10px 20px;
+    border: 2px solid var(--four-color);
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+body {
+    background-color: var(--one-color);
+}
+
+footer {
+    margin: 1px;
+    border-top: 2px solid var(--four-color);
+    text-align: center;
+    color: var(--four-color);
+}
