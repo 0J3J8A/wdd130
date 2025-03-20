@@ -15,38 +15,66 @@ p {
     font-family: "Cormorant Garamond", serif;
 }
 
+#video {
+    position: absolute; /* Posiciona el video para que cubra todo */
+    top: 0;
+    left: 0;
+    width: 100%; /* El video cubre todo el ancho de la pantalla */
+    height: 100vh; /* El video cubre toda la altura de la pantalla */
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsionarse */
+    z-index: -1; /* El video va al fondo */
+}
+
+/* Asegurarse de que el contenedor <header> esté en posición relativa */
+header {
+    position: relative;
+    height: 100vh; /* Asegura que el header tenga al menos el tamaño de la pantalla */
+}
+
+/* Estilo del logo */
 #logo {
     display: block;
-    margin: 0 auto;
     height: 120px;
 }
 
-#video{
-    display: inline;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    border: 0;
-    padding: 0;
+/* Estilo del contenedor del logo */
+#logo-nav {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1; /* El logo debe estar encima del video */
+}
+nav{
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 100px;
+    transform: translateX(-50%);
+    z-index: 1; /* El logo debe estar encima del video */
 }
 
 #menu {
-    text-align: center;
-    margin: 10px;
-    
-
+    text-align:right; 
+    position: absolute;
+    top: 45px;
+    left: 600px;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 #menu a {
-    
-    color: var(--four-color);
-    background-color: var(--one-color);
-    padding: 10px 20px;
-    border: 2px solid var(--four-color);
+    color: var(--one-color);
+    padding: 10px 40px;
+    border: 2px solid var(--one-color);
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     margin-right: 20px;
+    white-space: nowrap;
 }
 
 
