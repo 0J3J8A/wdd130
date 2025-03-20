@@ -21,12 +21,24 @@ p {
     height: 120px;
 }
 
+#video{
+    display: inline;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+}
+
 #menu {
     text-align: center;
     margin: 10px;
+    
+
 }
 
 #menu a {
+    
     color: var(--four-color);
     background-color: var(--one-color);
     padding: 10px 20px;
