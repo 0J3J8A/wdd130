@@ -7,6 +7,9 @@
     /* url color palette: https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Permanent Marker", cursive;
     color: var(--four-color);
