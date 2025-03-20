@@ -1,0 +1,111 @@
+:root {
+    --one-color: rgb(0, 8, 20);
+    --two-color: rgb(0, 29, 61);
+    --three-color: rgb(0, 53, 102);
+    --four-color: rgb(255, 195, 0);
+    --five-color: rgb(255, 214, 10);
+    /* url color palette: https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Permanent Marker", cursive;
+    color: var(--four-color);
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--five-color);
+    
+}
+
+body{
+    background-color: var(--one-color);
+}
+
+#logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+    width: 90px;
+}
+#menu{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--four-color);
+    box-sizing: border-box;
+    border: 3px solid var(--four-color);
+    padding: 10px 20px;
+    margin-right: 50px;
+    border-radius: 3px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 8, 20, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+}
+
+.hero article {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 8, 20, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    transform: translate(0%, 70%);
+}
+
+.hero article h2, .hero article p {
+    font-size: 30px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+.hero article img {
+    max-width: 100%;
+    width: 500px;
+    float: right;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 5px;  
+}
+
+footer{
+    margin-top: 15px;
+    border-top: 2px solid var(--four-color);
+    text-align: center;
+}
+#COPY{
+    display: inline-block;
+}
+footer a img{
+    width:30px;
+    margin-right: 5px;
+    float: right;
+    margin-top: 5px;
+    text-decoration: none;
+}
