@@ -6,11 +6,14 @@
     --g-padding: 10px;
 }
 
-*{
+* {
     margin: 1px;
     padding: 1px;
 }
-header, .grid, footer {
+
+header,
+.grid,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -23,12 +26,11 @@ nav {
     align-items: center;
 }
 
-nav a {   
+nav a {
     display: block;
     color: var(--font-color);
     padding: var(--g-padding);
     text-decoration: none;
-    font-size: 700;
     border: solid white 2px;
 }
 
@@ -62,18 +64,19 @@ main img {
 
 aside {
     width: 20rem;
-    position:relative;
-    grid-column:1/2; 
+    position: relative;
+    grid-column: 1/2;
     grid-row: 1/2;
 }
 
 aside img {
     width: 200px;
     height: auto;
-      
+
 }
+
 aside h2 {
-    position: absolute;  
+    position: absolute;
     left: 185px;
 }
 
@@ -96,7 +99,7 @@ footer {
 
 /* CLASS SELECTORS*/
 
-.box{
+.box {
     margin: 1rem;
     padding: 1rem;
     border: 2px solid black;
