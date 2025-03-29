@@ -28,9 +28,8 @@ body {
 
 header {
   margin: 1rem auto;
-  flex-wrap: wrap;
+  display: grid;
   border-bottom: 0.1rem solid var(--five-color);
-  max-width: cover;
 }
 
 nav {
@@ -39,17 +38,18 @@ nav {
 
 #menu {
   margin-top: 3rem;
+  flex-direction: row;
 }
 
 #logo {
+  grid-column: 1/2;
   margin-right: 15rem;
   margin-left: 20rem;
   width: 8rem;
-  /* 90px -> 5.625rem 
-  position: relative; */
 }
 
 #menu a {
+  grid-column: 2/3;
   display: inline-flex;
   text-decoration: none;
   color: var(--four-color);
@@ -191,8 +191,8 @@ figure {
 }
 
 figcaption {
-  background-color: rgba(0, 53, 102, 0.505);
-  color: var(--five-color);
+  background-color: #c0c0c0;
+  color: #000814;
   padding: 3px;
   text-align: center;
 }
