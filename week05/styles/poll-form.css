@@ -75,7 +75,7 @@ fieldset {
     padding: 1rem;
 }
 
-#one{
+#one, #two{
     text-align: right;
     padding-right: 1rem;
 }
