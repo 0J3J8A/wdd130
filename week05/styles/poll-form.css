@@ -1,0 +1,134 @@
+:root {
+    --one-color: rgb(0, 8, 20);
+    --two-color: rgb(0, 29, 61);
+    --three-color: rgb(0, 53, 102);
+    --four-color: rgb(255, 195, 0);
+    --five-color: rgb(255, 214, 10);
+    /* url color palette: https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a */
+}
+
+@font-face {
+    font-family: "handwriting";
+    src:
+        url("/week05/fonts/journal-webfont.woff2") format("woff2"),
+        url("/week05/fonts/journal-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "typewriter";
+    src:
+        url("/week05/fonts/momt___-webfont.woff2") format("woff2"),
+        url("/week05/fonts/momt___-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--one-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+form {
+    max-width: 800px;
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--four-color);
+    border-radius: 0.5rem;
+}
+
+h1,
+legend {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+    font: 2em "typewriter";
+    color: var(--four-color)
+}
+
+label,
+input {
+    font: 1.5em "handwriting";
+    color: var(--five-color);
+    margin-bottom: 5px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+#one{
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.column-1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--three-color);
+    color: var(--five-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 15px auto;
+    width: 650px;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid var(--four-color);
+    font-size: 1rem;
+    color: var(--five-color);
+}
