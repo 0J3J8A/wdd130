@@ -237,7 +237,7 @@ footer .above_logos {
   height: 768px;
   margin: 0;
   border-radius: 0.5rem;
-  background-image: url('/wwr/images3/rafting/vertical_rafting.webp');
+  background-image: url(/wwr/images3/rafting/vertical_rafting.webp);
   background-size: cover;
   background-position: center;
 }
