@@ -181,7 +181,7 @@ nav {
 }
 
 figure {
-  border:solid var(--five-color);
+  border: solid var(--five-color);
   display: flex;
   flex-flow: column;
   padding: 5px;
@@ -226,3 +226,137 @@ footer .above_logos {
   grid-column: 3/4;
   text-align: right;
 }
+/*CONTACT US PAGE CSS*/
+
+/* wireframe: https://app.moqups.com/P98oxsB5EgYpjSCwr787rS0fbnONOGwm/view/page/ac1a5c63c */
+
+.information {
+  font-size: 20px;
+  position: relative;
+  max-width: 800px;
+  height: 768px;
+  margin: 0;
+  border-radius: 0.5rem;
+  background-image: url('/wwr/images3/rafting/raftinghero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.information_text{
+  background-color: rgb(0, 8, 20, 0.8);
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+}
+.Address, .phone_number, .email_a{
+  background-color: rgb(0, 8, 20, 0.8);
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  width:300px ;
+}
+
+#h1_contact {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+}
+
+#contact_us {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: start;
+  gap: 1rem;
+}
+
+#contact_us div {
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--five-color);
+}
+
+.google_map {
+  position: relative;
+  float: right;
+  margin-top: -450px;
+  margin-right: 10px;
+  width: 320px;
+  height: 350px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.CONTACT_MESSAGE {
+  max-width: 1000px;
+  max-height: 785px;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 29, 61, 0.622);
+  padding: 1rem;
+}
+#TITLE_SEND {
+  font-size: 1.5rem;
+  margin-bottom: -3rem;
+  margin-top: 0;
+}
+
+.name, .email, .checkbox, .ACTION, .message{
+  border-radius: 0.2rem;
+  margin: 0;
+  background-color: rgba(0, 53, 102, 0.662);
+}
+.name, .email, .checkbox{
+  display: flex;
+}
+
+.CONTACT_MESSAGE label{
+  margin-right: 1rem;
+}
+.ACTION div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.message textarea{
+  width: 230px;
+}
+p, label{
+  font-weight: bold;
+}
+.ACTION input{
+  width: 20px;
+}
+.checkbox input{
+  width: 25px;
+}
+button {
+  background-color: var(--two-color);
+  color: var(--five-color);
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: rgba(36, 2, 255, 0.781);
+}
+.employees figcaption{
+  background-color: #c0c0c0;
+  color: #000814;
+  padding: 3px;
+  text-align: center;
+
+}
+.employees figure {
+  border: solid var(--five-color);
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 250px;
+  max-height: 260px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#Mandy img{
+  max-height: 230px;
+}
+

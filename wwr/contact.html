@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Golden Club-Contact Us</title>
     <meta name="author" content="Juan Jose Aguirre Marin">
-    <meta name="description" content="The section of Splash Golden Club contact page, where you can contact with us.">
+    <meta name="description"
+        content="The section of Splash Golden Club contact page, where you can contact with us and make an appointment or Reservation.">
     <link rel="stylesheet" href="styles/rafting.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,53 +33,87 @@
 
     </header>
 
-    <main>
-        <section>
-            <h1>CONTACT US</h1>
-            <p>Address:
-                All-Outdoors California Whitewater Rafting
-                1250 Pine St, Suite 103
-                Walnut Creek, CA 94596
-                United States </p>
-            <p>Phone Number: +1 (925) 555-0187 </p>
-            <p>Phone Number: +1 (925) 555-6423 </p>
-            <p>Email:contact_us@splashgoldenclub.com</p>
-            <iframe class="google_map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1113.2787266603398!2d-122.04241661981368!3d37.88771082148576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1743731567522!5m2!1ses!2sco"
-                width="300" height="250" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <form>
-            <div class="name">
-                <p>SEND US A MESSAGE</p>
-                <label id="one" for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullanme">
+    <h1 id="h1_contact">CONTACT US</h1>
+
+    <main id="contact_us">
+        <div class="information">
+            <div class="information_text">
+                <p>Address:</p>
+                <div class="Address">
+                    <p>All-Outdoors California</p>
+                    <p>Whitewater Rafting 1250 Pine St,</p>
+                    <p>Suite 103 Walnut Creek,</p>
+                    <p>CA 94596 United States </p>
+                </div>
+                <p>Phone Number: </p>
+                <div class="phone_number">
+                    <p>+1 (925) 555-0187 </p>
+                    <p>+1 (925) 555-6423 </p>
+                </div>
+                <p>Email:</p>
+                <div class="email_a">
+                    <p>contact_us@splashgoldenclub.com</p>
+                </div>
+                <iframe class="google_map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1113.2787266603398!2d-122.04241661981368!3d37.88771082148576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1743731567522!5m2!1ses!2sco"
+                    width="300" height="250" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="email">
-                <label id="two" for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail">
+        </div>
+        <form class="CONTACT_MESSAGE">
+            <p id="TITLE_SEND">SEND US A MESSAGE</p>
+            <div class="FORM">
+                <div class="name">
+                    <label id="one" for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullanme" placeholder="Full Name">
+                </div>
+                <div class="email">
+                    <label id="two" for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="Email">
+                </div>
+                <div class="ACTION">
+                    <p>What action do you want to do?</p>
+                    <div>
+                        <label for="General_Inquiry">General Inquiry</label>
+                        <input type="radio" id="General_Inquiry" name="action_type" value="General Inquiry">
+                    </div>
+                    <div>
+                        <label for="Reservation_Question">Reservation Question</label>
+                        <input type="radio" id="Reservation_Question" name="action_type" value="Reservation Question">
+                    </div>
+                    <div>
+                        <label for="Website_Suggestion">Website Suggestion</label>
+                        <input type="radio" id="Website_Suggestion" name="action_type" value="Website Suggestion">
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="checkbox">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter.</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <button type="submit">SUMBIT MESSAGE</button>
             </div>
-            <div class="ACTION">
-                <p>What action do you want to do?</p>
-                <label for="General_Inquiry">General Inquiry</label>
-                <input type="radio" id="General_Inquiry" name="action_type" value="General Inquiry">
-                <label for="Reservation_Question">Reservation Question</label>
-                <input type="radio" id="Reservation_Question" name="action_type" value="Reservation Question">
-                <label for="Website_Suggestion">Website Suggestion</label>
-                <input type="radio" id="Website_Suggestion" name="action_type" value="Website Suggestion">
-            </div>
-            <div class="message">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
-            </div>
-            <div class="checkbox">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
-            </div>
-            <button type="submit">Submit Message</button>
         </form>
-
-
+        <section class="employees">
+            <h2>OUR TEAM</h2>
+            <div>
+                <figure id="Mandy">
+                    <img src="images3/person/IMG_1.jpeg" alt="IMG/PROFILE/Mandy Madison">
+                    <figcaption>Mandy Madison</figcaption>
+                </figure>
+                <figure>
+                    <img src="images3/person/IMG_2.jpeg" alt="IMG/PROFILE/Jonas Peterson">
+                    <figcaption>Jonas Peterson</figcaption>
+                </figure>
+                <figure>
+                    <img src="images3/person/IMG_3.jpeg" alt="IMG/PROFILE/Riahana Jhonson">
+                    <figcaption>Riahana Jhonson</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
     <footer>
