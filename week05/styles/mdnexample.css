@@ -1,8 +1,8 @@
 @font-face {
   font-family: "handwriting";
   src:
-    url("fonts/journal-webfont.woff2") format("woff2"),
-    url("fonts/journal-webfont.woff") format("woff");
+    url("/week05/fonts/journal-webfont.woff2") format("woff2"),
+    url("/week05/fonts/journal-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
   font-family: "typewriter";
   src:
-    url("fonts/momt___-webfont.woff2") format("woff2"),
-    url("fonts/momt___-webfont.woff") format("woff");
+    url("/week05/fonts/momt___-webfont.woff2") format("woff2"),
+    url("/week05/fonts/momt___-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +30,8 @@ form {
   margin: 0 auto;
   padding: 1em;
   box-sizing: border-box;
-  background: #fff url(images_week05/background.jpg); /*HERE IS THE IMG IS NOT NECESSARY TO PUT IT IN TH HTML*/
+  background: #fff url(/week05/images_week05/background.jpg);
+  /*HERE IS THE IMG IS NOT NECESSARY TO PUT IT IN TH HTML*/
 
   /* we create our grid */
   display: grid;
@@ -115,4 +116,3 @@ button:focus {
   background: #000;
   color: #fff;
 }
-
