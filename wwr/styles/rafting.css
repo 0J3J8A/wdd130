@@ -34,11 +34,11 @@ header {
 
 nav {
   display: flex;
+  flex-direction: row;
 }
 
 #menu {
   margin-top: 3rem;
-  flex-direction: row;
 }
 
 #logo {
@@ -50,7 +50,6 @@ nav {
 
 #menu a {
   grid-column: 2/3;
-  display: inline-flex;
   text-decoration: none;
   color: var(--four-color);
   box-sizing: border-box;
@@ -65,13 +64,14 @@ nav {
 }
 
 
-.hero {
+.hero,
+.home_hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 0.125rem solid var(--four-color);
 }
 
-.hero h1 {
+.hero h1,
+.home_hero h1 {
   position: absolute;
   white-space: nowrap;
   text-align: center;
@@ -86,6 +86,7 @@ nav {
   width: 100%;
   font-size: 2.5rem;
   /* 40px -> 2.5rem */
+  z-index: 1;
 }
 
 .hero article {
@@ -107,12 +108,25 @@ nav {
   /* 30px -> 1.875rem */
 }
 
-.hero img {
+.hero img,
+.home_hero img {
   width: 100%;
-  height: auto;
   display: block;
   padding: 0;
   margin-bottom: 1rem;
+}
+
+.hero img {
+  height: auto;
+}
+
+.home_hero img {
+  z-index: -1;
+  /* this is a mask to get a fade in the main image, but the CSS validator recognized it as a invalid one 
+  mask-image: linear-gradient(to bottom, rgb(0, 29, 61) 35%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 53, 102) 35%, transparent 100%);
+  */
+  height: 50rem;
 }
 
 .hero article img {
@@ -180,7 +194,8 @@ nav {
   text-align: center;
 }
 
-figure {
+.figure_contact,
+.about_figure {
   border: solid var(--five-color);
   display: flex;
   flex-flow: column;
@@ -190,7 +205,8 @@ figure {
   margin-bottom: 1rem;
 }
 
-figcaption {
+.about,
+.contact {
   background-color: #c0c0c0;
   color: #000814;
   padding: 3px;
@@ -226,6 +242,7 @@ footer .above_logos {
   grid-column: 3/4;
   text-align: right;
 }
+
 /*CONTACT US PAGE CSS*/
 
 /* wireframe: https://app.moqups.com/P98oxsB5EgYpjSCwr787rS0fbnONOGwm/view/page/ac1a5c63c */
@@ -237,20 +254,24 @@ footer .above_logos {
   height: 768px;
   margin: 0;
   border-radius: 0.5rem;
-  background-image: url("images_styles/vertical_rafting.webp");  
+  background-image: url("images_styles/vertical_rafting.webp");
   background-size: cover;
   background-position: center;
 }
-.information_text{
+
+.information_text {
   background-color: rgb(0, 8, 20, 0.8);
   padding: 0.625rem;
   border-radius: 0.3125rem;
 }
-.Address, .phone_number, .email_a{
+
+.Address,
+.phone_number,
+.email_a {
   background-color: rgb(0, 8, 20, 0.8);
   padding: 0.625rem;
   border-radius: 0.3125rem;
-  width:300px ;
+  width: 300px;
 }
 
 #h1_contact {
@@ -289,43 +310,59 @@ footer .above_logos {
   background-color: rgba(0, 29, 61, 0.622);
   padding: 1rem;
 }
+
 #TITLE_SEND {
   font-size: 1.5rem;
   margin-bottom: -3rem;
   margin-top: 0;
 }
 
-.name, .email, .checkbox, .ACTION, .message{
+.name,
+.email,
+.checkbox,
+.ACTION,
+.message {
   border-radius: 0.2rem;
   margin: 0;
   background-color: rgba(0, 53, 102, 0.662);
 }
-.name, .email, .checkbox{
+
+.name,
+.email,
+.checkbox {
   display: flex;
 }
 
-.CONTACT_MESSAGE label{
+.CONTACT_MESSAGE label {
   margin-right: 1rem;
 }
+
 .ACTION div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
 }
-.message textarea{
+
+.message textarea {
   width: 230px;
 }
-p, label{
+
+p,
+label {
   font-weight: bold;
 }
-.ACTION input{
+
+.ACTION input {
   width: 20px;
 }
-.checkbox input{
-  width: 25px;
+
+#subscribe_contact {
+  width: 70px;
 }
+
 button {
+  display: flex;
   background-color: var(--two-color);
   color: var(--five-color);
   border-radius: .5rem;
@@ -338,13 +375,15 @@ button {
 button:hover {
   background-color: rgba(36, 2, 255, 0.781);
 }
-.employees figcaption{
+
+.employees figcaption {
   background-color: #c0c0c0;
   color: #000814;
   padding: 3px;
   text-align: center;
 
 }
+
 .employees figure {
   border: solid var(--five-color);
   display: flex;
@@ -356,7 +395,115 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-#Mandy img{
+#Mandy img {
   max-height: 230px;
 }
 
+.newsletter_form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.information_form {
+  font-size: 40px;
+  grid-column: 1/2;
+  background-image: url("images_styles/vertical_rafting.webp");
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.information_form p {
+  max-width: 1000px;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 8, 20, 0.8);
+  padding: 1rem;
+  margin-bottom: 70px;
+}
+
+.form {
+  grid-column: 2/3;
+  background-color: var(--two-color);
+  border-radius: 1rem;
+}
+
+.form input {
+  font-size: 20px;
+  margin: 0;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.form label {
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 40px;
+  color: var(--four-color);
+  margin-left: 1rem;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#HOME_BUTTON {
+  margin-left: 45%;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+
+#subscribe_home {
+  width: 200px;
+  height: 30px;
+}
+
+.home_article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.POINT_6_1 h2,
+.POINT_6_2 h2,
+.POINT_6_3 h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.POINT_6_1 p,
+.POINT_6_2 p,
+.POINT_6_3 p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.POINT_6_1 img {
+  width: 450px;
+  height: 310px;
+}
+
+.POINT_6_2 img, .POINT_6_3 img {
+  width: 380px;
+  height: 310px;
+}
+.POINT_6_2 figure, .POINT_6_3 figure{
+  margin-top: 7rem;
+}
+
+.f_home {
+  border: solid var(--five-color);
+  padding: 4px;
+}
+
+.figcaption_home{
+  background-color: #c0c0c0;
+  color: #000814;
+  padding: 3px;
+  text-align: center;
+}
