@@ -17,7 +17,9 @@ h6 {
   color: var(--four-color);
 }
 
-p {
+p,
+th,
+td {
   font-family: "Cormorant Garamond", serif;
   color: var(--five-color);
 }
@@ -488,11 +490,14 @@ button:hover {
   height: 310px;
 }
 
-.POINT_6_2 img, .POINT_6_3 img {
+.POINT_6_2 img,
+.POINT_6_3 img {
   width: 380px;
   height: 310px;
 }
-.POINT_6_2 figure, .POINT_6_3 figure{
+
+.POINT_6_2 figure,
+.POINT_6_3 figure {
   margin-top: 7rem;
 }
 
@@ -501,9 +506,113 @@ button:hover {
   padding: 4px;
 }
 
-.figcaption_home{
+.figcaption_home {
   background-color: #c0c0c0;
-  color: #000814;
   padding: 3px;
   text-align: center;
+}
+
+.figcaption_home a {
+  text-decoration: none;
+  color: #000814;
+}
+
+#TITLE_TRIPS {
+  text-align: center;
+  border-bottom: 3px solid var(--five-color);
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+
+.trip_1,
+.trip_3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  border-bottom: 3px solid var(--five-color);
+  margin-bottom: 2rem;
+}
+
+.information_trip_1,
+.information_trip_2,
+.information_trip_3 {
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: var(--two-color);
+  border-radius: 2rem;
+}
+
+.information_trip_1 a,
+.information_trip_2 a,
+.information_trip_3 a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+
+.trip_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  border-bottom: 3px solid var(--five-color);
+  margin-bottom: 2rem;
+}
+
+.trip_1 img,
+.trip_2 img,
+.trip_3 img {
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+}
+
+.trip_2 img {
+  width: 900px;
+  height: 500px;
+}
+
+.trip_3 img {
+  width: 980px;
+  height: 550px;
+}
+
+.TABLE_SECTION {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+table {
+  border: 0.125rem solid var(--four-color);
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+th, td {
+  border: 0.1rem solid var(--four-color);
+  padding: 0.2rem;
+}
+
+.pack_incluide {
+  text-align: center;
+}
+
+.pack_incluide_photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+}
+
+.pack_incluide_photos img {
+  width: 220px;
+  height: 200px;
+  border-radius: 2rem;
+}
+
+.information_pack {
+  background-color: var(--two-color);
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 310px;
+  border-radius: 2rem;
 }
