@@ -616,3 +616,7 @@ th, td {
   width: 310px;
   border-radius: 2rem;
 }
+#table_logo{
+  width: 100px;
+  height: auto;
+}
